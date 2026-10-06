@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christiniel Teope — Backend Developer</title>
+  <meta name="description" content="Portfolio of Christiniel Teope, Backend Developer specializing in Python, Flask, Node.js, MongoDB and SQL Server." />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    // Apply theme before paint: saved choice wins, otherwise follow system
+    (function () {
+      try {
+        var saved = localStorage.getItem('ct-theme');
+        var dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/64506131?v=4" />
+</head>
+<body>
+  <header class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">CT<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="icon-btn">◐</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <p class="eyebrow">👋 Hello, I'm</p>
+        <h1>Christiniel Teope</h1>
+        <h2 class="role">Backend Developer</h2>
+        <p class="subtitle">
+          I build reliable server-side applications, REST APIs, and database tools
+          with <strong>Python / Flask</strong>, <strong>Node.js</strong>, <strong>MongoDB</strong> and <strong>SQL Server</strong>.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Christiniel" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.facebook.com/christiniel.teope" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.linkedin.com/in/christiniel-teope-0a0724421/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="profile-card">
+          <img src="https://avatars.githubusercontent.com/u/64506131?v=4" alt="Christiniel Teope" />
+          <h3>Christiniel Teope</h3>
+          <p class="muted">Backend Developer</p>
+          <div class="stats">
+            <div><strong>4+</strong><span>Public Repos</span></div>
+            <div><strong>100+</strong><span>Commits*</span></div>
+            <div><strong>5+</strong><span>Tech Stack</span></div>
+          </div>
+          <div class="badges">
+            <span>Python</span><span>Node.js</span><span>MongoDB</span><span>MSSQL</span><span>Docker</span>
+          </div>
+          <a class="btn btn-primary btn-block" href="https://github.com/Christiniel" target="_blank" rel="noopener">Follow on GitHub</a>
+          <p class="tiny muted">* across solaris-collab & tooling projects</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title">Backend-focused developer who ships practical tools</h2>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>
+            I'm <strong>Christiniel Teope</strong>, a Backend Developer focused on building
+            clean APIs, database utilities, and full-stack prototypes. My work spans
+            <strong>Flask + SQL Server</strong> apps, <strong>Node.js + MongoDB</strong> tooling with Docker,
+            headless CMS with <strong>Strapi</strong>, and collaborative full-stack + IoT experiments.
+          </p>
+          <p>
+            I care about reliability: masked secrets in logs, safe restore flows with
+            <code>--drop</code> warnings, downloadable backup libraries, and deployment-ready configs.
+          </p>
+          <ul class="checklist">
+            <li>✓ REST API design (Flask, Express, Strapi)</li>
+            <li>✓ MongoDB backup / restore automation (mongodump / mongorestore)</li>
+            <li>✓ SQL Server integration with Python</li>
+            <li>✓ Dockerized services & Render-ready deploys</li>
+          </ul>
+        </div>
+        <div class="info-cards reveal">
+          <div class="info-card">
+            <h4>📍 Location</h4>
+            <p>Philippines · Open to Remote</p>
+          </div>
+          <div class="info-card">
+            <h4>💼 Focus</h4>
+            <p>Backend Development, APIs, Databases, DevOps basics</p>
+          </div>
+          <div class="info-card">
+            <h4>🎓 Interests</h4>
+            <p>IoT integrations, CMS / Strapi, Backup & Recovery systems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">Tech stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>🐍 Backend</h3>
+          <div class="tags"><span>Python</span><span>Flask</span><span>Node.js</span><span>Express</span><span>Strapi</span><span>REST APIs</span></div>
+          <div class="bar"><i style="width:90%"></i></div>
+          <small>API design, auth basics, file uploads, validation</small>
+        </div>
+        <div class="skill-card reveal">
+          <h3>🗄️ Databases</h3>
+          <div class="tags"><span>MongoDB</span><span>mongodump</span><span>mongorestore</span><span>SQL Server</span><span>MSSQL</span></div>
+          <div class="bar"><i style="width:85%"></i></div>
+          <small>Backup / restore flows, migrations, connection URIs</small>
+        </div>
+        <div class="skill-card reveal">
+          <h3>⚙️ DevOps & Tools</h3>
+          <div class="tags"><span>Docker</span><span>Git & GitHub</span><span>Render</span><span>Postman</span><span>VS Code</span></div>
+          <div class="bar"><i style="width:78%"></i></div>
+          <small>Dockerfiles, Procfile deploys, env config</small>
+        </div>
+        <div class="skill-card reveal">
+          <h3>🌐 Frontend Basics</h3>
+          <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="bar"><i style="width:70%"></i></div>
+          <small>Admin UIs, dashboards, backup libraries</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section-title">Selected work from GitHub</h2>
+      <p class="muted">Live code on <a href="https://github.com/Christiniel" target="_blank" rel="noopener">@Christiniel</a> — all public repositories.</p>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal">
+          <div class="project-top"><span class="pill">⭐ Featured</span><span class="lang">Node.js · MongoDB · Docker</span></div>
+          <h3>MongoBackupRecovery</h3>
+          <p>Web-based backup & recovery tool for MongoDB. Runs <code>mongodump</code> / <code>mongorestore</code> on the server with a simple web UI: backup library, download / delete, upload-restore, server-file restore, masked secrets in logs, gzip + <code>--drop</code> safety.</p>
+          <div class="tags"><span>Express</span><span>mongodump</span><span>Docker</span><span>REST API</span><span>Render</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Christiniel/MongoBackupRecovery" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Repo ↗</a>
+            <span class="muted small">API: /api/health · /api/backup · /api/restore</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span class="lang">Python · Flask · MSSQL</span></div>
+          <h3>flask-mssql-app</h3>
+          <p>Flask application backed by Microsoft SQL Server. Deployment-ready with <code>Procfile</code>, <code>runtime.txt</code> and <code>requirements.txt</code> — clean starter for Python + enterprise DB workloads.</p>
+          <div class="tags"><span>Flask</span><span>SQL Server</span><span>Python</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Christiniel/flask-mssql-app" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span class="lang">JavaScript · Full-Stack · IoT</span></div>
+          <h3>solaris-collab</h3>
+          <p>Collaborative full-stack project (100 commits) with <code>client/</code>, <code>server/</code> and <code>IoT_Code/</code>. Explores IoT device integration alongside a web client/server — team collaboration in practice.</p>
+          <div class="tags"><span>JavaScript</span><span>Client/Server</span><span>IoT</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Christiniel/solaris-collab" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span class="lang">Strapi · Headless CMS</span></div>
+          <h3>SIA-Lab</h3>
+          <p>Systems Integration lab built on Strapi headless CMS — content modeling, migrations, config and API scaffolding. Great base for CMS-driven apps.</p>
+          <div class="tags"><span>Strapi</span><span>CMS</span><span>APIs</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Christiniel/SIA-Lab" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Repo ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="center">
+        <a href="https://github.com/Christiniel?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">See all repositories on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="muted">Open to backend roles, freelance API/database work, and collaborations. The fastest way to reach me is via email, LinkedIn or Facebook.</p>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:christinielrteope@gmail.com"><strong>Email</strong><span>christinielrteope@gmail.com</span></a>
+          <a class="contact-card" href="https://github.com/Christiniel" target="_blank" rel="noopener"><strong>GitHub</strong><span>github.com/Christiniel</span></a>
+          <a class="contact-card" href="https://www.linkedin.com/in/christiniel-teope-0a0724421/" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>linkedin.com/in/christiniel-teope-0a0724421</span></a>
+          <a class="contact-card" href="https://www.facebook.com/christiniel.teope" target="_blank" rel="noopener"><strong>Facebook</strong><span>facebook.com/christiniel.teope</span></a>
+        </div>
+      </div>
+      <form class="contact-form reveal" onsubmit="return sendMail(event)">
+        <label>Name<input id="cfName" required placeholder="Your name" /></label>
+        <label>Email<input id="cfEmail" type="email" required placeholder="you@email.com" /></label>
+        <label>Message<textarea id="cfMsg" rows="5" required placeholder="Hi Christiniel, I'd like to talk about..."></textarea></label>
+        <button class="btn btn-primary btn-block" type="submit">Send Message ✉</button>
+        <p class="tiny muted">Opens your email client addressed to your portfolio contact.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Christiniel Teope · Backend Developer</p>
+      <div class="footer-links">
+        <a href="https://github.com/Christiniel" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.facebook.com/christiniel.teope" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/in/christiniel-teope-0a0724421/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
